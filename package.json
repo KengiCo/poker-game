@@ -1,0 +1,19 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "Given various poker hands as arguments, print what type of hand each argument is.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KengiCo/poker-game.git"
+  },
+  "author": "Kengi Costagliola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KengiCo/poker-game/issues"
+  },
+  "homepage": "https://github.com/KengiCo/poker-game#readme"
+}
