@@ -72,7 +72,7 @@ Following some useful materials for your work:
 2. shuffle the deck and deal 5 cards, or pick 5 random cards from the deck
 - 5minutes (real time taken 1hour and 5 minutes to get here)
 3. given the 5 cards, recognize all the possible combination(flush,fullhouse, poker, pair ecc..)
-- 1hour
+- 1hour (real time 1 hour + )
 4. write the tests and use jest
 - 1hour
 5. eventually assign points for every dealt hand so that a tris of queens is higher than a tris of 9s
