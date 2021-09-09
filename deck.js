@@ -64,7 +64,6 @@ for (let card of hand) {
   handValue.push(card.value);
   handSuit.push(card.suit);
 } 
-console.log(handValue);
 
 function checkPairs() {
 //   var arr = ["A", "B", "C", "D", "E"];
@@ -78,19 +77,18 @@ function checkPairs() {
   }
 // check how many times every value of the card is repeated(eg 2 for a pair or 6 for a tris)
   if (countPairs == 2) {
-    return console.log("Pair");
+    return "Pair";
   } else if (countPairs == 4) {
-    return console.log("Two Pair");
+    return "Two Pair";
   } else if (countPairs == 6) {
-    return console.log("Three of a kind");
+    return "Three of a kind";
   } else if (countPairs == 8) {
-    return console.log("Full Hose");
+    return "Full House";
   } else if (countPairs == 12) {
-    return console.log("Poker");
+    return "Poker";
   } else {
     // i should check here for High Card, Straight, Flush, Straight Flush, Royal Flush
     let sortableValue = [];
-    console.log(Object.values(mapped_Values));
     console.log(mapped_Values[handValue[0]]);
     for (hand of handValue) {
       sortableValue.push(mapped_Values[hand]);
@@ -103,16 +101,16 @@ function checkPairs() {
         sortableValue[4] == sortableValue[0] + sortableValue.length - 1 &&
         sortableValue[sortableValue.length - 1] == 14
       ) {
-        return console.log("Royal Flush");
+        return "Royal Flush";
     } else if 
     // check if the last digit of the array sorted is equal to the first + the number of cards
     (
       sortableValue[sortableValue.length - 1] ==
       sortableValue[0] + sortableValue.length - 1
     ) {
-      return console.log("Straight Flush");
+      return "Straight Flush";
     } else {
-      return console.log("Flush");
+      return "Flush";
     }
   }
 // check for a plain straight
@@ -120,12 +118,12 @@ function checkPairs() {
     sortableValue[sortableValue.length - 1] ==
     sortableValue[0] + sortableValue.length - 1
   ){
-    return console.log("Straight")
+    return "Straight"
   }
  else {
      let highestCard = Object.keys(mapped_Values).find(key => mapped_Values[key] == sortableValue[sortableValue.length - 1])
-     return console.log(`Highest card is ${highestCard}`)
+     return `Highest card is ${highestCard}`
  }
 }}        
  
-checkPairs();
+console.log(checkPairs());
