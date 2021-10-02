@@ -63,9 +63,13 @@ for (let card of hand) {
   handArray.push(card.suit + card.value);
   handValue.push(card.value);
   handSuit.push(card.suit);
-} 
+}
 
-function checkPairs() {
+
+
+const functions = {
+checkPairs: function(handArray, handValue, handSuit ) {
+
 //   var arr = ["A", "B", "C", "D", "E"];
   let countPairs = 0;
   for (i = 0; i < handValue.length; i++) {
@@ -124,6 +128,7 @@ function checkPairs() {
      let highestCard = Object.keys(mapped_Values).find(key => mapped_Values[key] == sortableValue[sortableValue.length - 1])
      return `Highest card is ${highestCard}`
  }
-}}        
- 
-console.log(checkPairs());
+}        
+}}
+console.log(functions.checkPairs(handArray,handValue,handSuit))
+module.exports = functions;
